@@ -12,11 +12,14 @@ The files are conveniently documented and segmented such that modifying them is 
 
 The first output file will always be `<filename>.am`. This is the same script, but after having gone through the pre-processing stage.
 
-The next output files will not be created if the program fails:
+The next output files will not be created if the program fails or if there is nothing to write in them:
 - `<filename>.ent` - the entry points declared in the file and their addresses.
 - `<filename>.ext` - the external variables declared in the file and the addresses of the lines where they are used.
 - `<filename>.ob` - the output file of the compiled code. The format is such that nibbles A-E represent a full 20-bit word (in a theoretical 20-bit system).
 # Examples
 Examples of the program's usage are also provided, in the `Examples` folder. The examples detail all possible errors that the assembler will locate and warn about. The error messages recieved from the unsuccessful runs are also located int he `Examples` folder, labeled `Examples/bad_runs.png`.
 
-Other examples demonstrate successful runs, complete wiwth
+
+![Error messages recieved](https://github.com/MisterSenyor/Assembler/blob/main/Examples/bad_runs.png?raw=true)
+
+Other examples demonstrate successful runs, complete with all output files.
